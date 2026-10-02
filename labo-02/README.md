@@ -41,7 +41,9 @@ de variable aanmaken, ik wist niet meer hoe het moest maar ik heb het opgezocht
 ## 6. Je site
 
 - Welke drie waarden staan in je tokenblok, en waarom die?
+wat random kleuren omdat we iets daar moesten zetten maar ik snap wel voorwat het handig kan zijn
 - Wat verandert er in je site als je één token wijzigt?
+alles wat die token (kleur) gebruikt
 
 ## Thuis: R2.3 (met AI)
 
