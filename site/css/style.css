@@ -1,0 +1,33 @@
+:root
+{
+    --één: #fff11f;
+    --twee: #f67f66;
+}
+
+body
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav li a
+{
+    text-decoration: none;
+    color: rgb(165, 144, 42);
+}
+
+nav li a.selected
+{
+    color: green;
+    text-decoration: none;
+}
+
+nav a:hover,:focus
+{
+    text-decoration: none;
+    color: rgb(17, 12, 12);
+}
+
+h1
+{
+    color: var(--twee);
+}
