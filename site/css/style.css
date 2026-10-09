@@ -1,8 +1,8 @@
 :root
 {
-    --één: #fff11f;
-    --twee: #f67f66;
-    --drie: #abcdef;
+    --text_color: black;
+    --own_green: rgba(144, 238, 144, 0.475);
+    --own_dark_green: rgba(51, 126, 51, 0.475);
 }
 
 body
@@ -10,16 +10,31 @@ body
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-nav li a
+main
 {
-    text-decoration: none;
-    color: rgb(165, 144, 42);
+    background-color: lightgray
 }
 
-nav li a.selected
+nav
 {
-    color: green;
+    text-align: center;
+    padding: 1rem;
+}
+
+nav a
+{
     text-decoration: none;
+    color: var(--text_color);
+    margin: 3rem;
+    padding: .5rem .7rem;
+}
+
+nav a.selected
+{
+    background-color: var(--own_green);
+    text-decoration: none;
+    border-radius: 1rem;
+    border: .1rem solid gray;
 }
 
 nav a:hover,:focus
@@ -31,4 +46,33 @@ nav a:hover,:focus
 h1
 {
     color: var(--twee);
+}
+
+.info-box
+{
+    background-color: var(--own_green);
+    padding: 1rem;
+    display: inline-block;
+    border-radius: 1rem;
+    width: 20rem;
+    height: 20rem;
+    box-shadow: .5rem .5rem var(--own_dark_green);
+    margin: 1rem;
+}
+
+.info-box h2
+{
+    text-align: center;
+}
+
+image
+{
+    width: 1vb;
+    height: 1vh;
+}
+
+footer
+{
+    text-align: center;
+    background-color: var(--balkbackground);
 }

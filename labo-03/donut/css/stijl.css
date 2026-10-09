@@ -1,0 +1,39 @@
+/* stijl.css - labo 3, donut (reset.css is linked before this file) */
+
+/* === tokens === */
+:root {
+--oranje: #ec4b03;
+--paars: #b99ec1;
+--geel: #f9b700;
+}
+
+/* === your rules === */
+main
+{
+    overflow: hidden;
+    background-color: var(--oranje);
+    margin: 1rem 25vw;
+    border-style: solid;
+    border-width: .5rem;
+    padding: 10rem;
+}
+
+main div
+{
+    overflow: hidden;
+    background-color: var(--paars);
+    border-style: solid;
+    border-width: .5rem;
+    border-radius: 400rem;
+}
+
+main div h1
+{
+    background-color: var(--geel);
+    border-bottom-style: solid;
+    border-right-style: solid;
+    border-width: .5rem;
+    padding: 5rem;
+    margin-right: 3rem;
+    margin-bottom: 3rem;
+}

@@ -1,0 +1,89 @@
+/* stijl.css - labo 3, landing (reset.css is linked before this file) */
+
+/* === tokens === */
+:root {
+--banner: #c8b8ff;
+--link: #5551ff;
+--hero: #779cee;
+}
+
+/* === your rules === */
+body
+{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.banner
+{
+    background-color: var(--banner);
+    text-align: center;
+    padding: 1rem;
+}
+
+.banner p a
+{
+    color: var(--link);
+}
+
+main
+{
+    background-color: var(--hero);
+    height: 80vh;
+}
+
+article
+{
+    padding: 3rem;
+    display: inline-block;
+    width: 50%;
+    height: 70vh;
+    vertical-align: top;
+}
+
+article p, h1
+{
+    margin: 1rem;
+}
+
+article a
+{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    border-radius: .5rem;
+    padding: 1rem;
+    margin-left: 1rem;
+    margin-top: 5rem;
+}
+
+.afbeelding
+{
+    display: inline-block;
+    width: 20rem;
+    margin: 3rem;
+}
+
+.afbeelding img
+{
+    display: inline-block;
+    width: 70%;
+}
+
+nav ul
+{
+    list-style: none;
+    text-align: right;
+}
+
+nav ul li a
+{
+    text-decoration: none;
+    color: black    ;
+}
+
+nav ul li
+{
+    display: inline-block;
+    padding: 1rem;
+}
