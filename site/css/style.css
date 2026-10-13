@@ -1,3 +1,30 @@
+/* reset.css - the project reset of Web Technology (syllabus 3.3)
+   Link it before stijl.css and leave it alone: your own CSS goes in stijl.css. */
+
+/* 1. A predictable box: width and height include padding and border */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Browser margins are our decision, not the browser's */
+body, h1, h2, h3, h4, h5, h6,
+p, figure, blockquote, dl, dd {
+  margin: 0;
+}
+
+/* 3. Media never spills out of its container, and is a block, not a letter */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 4. Form controls use the same typography as the page */
+input, button, textarea, select {
+  font: inherit;
+}
+
 :root
 {
     --text_color: black;
@@ -10,11 +37,13 @@ body
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-main
+header
 {
-    background-color: lightgray
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
 }
-
 nav
 {
     text-align: center;
@@ -43,9 +72,24 @@ nav a:hover,:focus
     color: rgb(17, 12, 12);
 }
 
+main
+{
+    background-color: lightgray;
+    margin-top: 4rem;
+    padding: 1rem;
+}
+
+
 h1
 {
     color: var(--twee);
+}
+
+.info-boxen
+{
+    display: grid;
+    grid-template-columns: 24vw 24vw 24vw 24vw;
+    margin: 2vw;    
 }
 
 .info-box
@@ -54,10 +98,9 @@ h1
     padding: 1rem;
     display: inline-block;
     border-radius: 1rem;
-    width: 20rem;
-    height: 20rem;
     box-shadow: .5rem .5rem var(--own_dark_green);
     margin: 1rem;
+    height: 15rem;
 }
 
 .info-box h2
@@ -65,10 +108,12 @@ h1
     text-align: center;
 }
 
-image
+img
 {
-    width: 1vb;
-    height: 1vh;
+    display: flex;
+    width: 30%;
+    height: 30%;
+    border: 1rem solid var(--own_green);
 }
 
 footer
