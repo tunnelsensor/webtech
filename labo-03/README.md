@@ -40,6 +40,7 @@ ook niet gebruikt
 ## 5. Landingspagina
 
 - Gaf je `main` een `height` of een `min-height`, en waarom?
+ja omdat dan de header beter zichtbaar is
 - Wat gebeurt er met de twee helften als je een regeleinde zet tussen `</article>` en `<div class="afbeelding">`?
 
 ## Thuis: B3.1 (met AI of zonder AI)
