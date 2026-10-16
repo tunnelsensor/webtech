@@ -2,7 +2,55 @@
 
 /* === tokens === */
 :root {
-
+--trede1: #1446a0;
+--trede2: #db3069;
+--trede3: #f5d547;
+--trede4: #ebebd3;
 }
 
 /* === your rules === */
+.trap
+{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    color: white;
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    font-weight: bold;
+}
+
+.trede
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.trap .trede:nth-child(1)
+{
+    background-color: var(--trede1);
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.trap .trede:nth-child(2)
+{
+    background-color: var(--trede2);
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.trap .trede:nth-child(3)
+{
+    background-color: var(--trede3);
+    grid-column: 3;
+    grid-row: 3;
+}
+
+.trap .trede:nth-child(4)
+{
+    background-color: var(--trede4);
+    grid-column: 4;
+    grid-row: 4;
+}
